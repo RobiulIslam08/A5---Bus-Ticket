@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket</title>
 
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- daisy ui and tailwind css link here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -183,7 +186,7 @@
         </div>
 
         <!-- select your seats design start here -->
-        <div  class="grid gap-10 h-[400px] w-[85%] bg-[#FFFFFF] mx-auto grid-cols-12 mb-32">
+        <div  class="grid gap-10 h-[400px] w-[85%] bg-[#FFFFFF] mx-auto grid-cols-12">
            <div class="col-span-7 p-5 ">
             <h1 class="font-raleway text-2xl font-semibold mb-6">Select Your Seat</h1>
             <p class="border-dashed border-[#03071233] border"></p>
@@ -205,22 +208,20 @@
             <!-- seats design start here -->
             <div>
                 
-                <div class="flex justify-between mt-4">
+                <div class="grid grid-cols-4 gap-9 mt-4">
                     
-                    <div class="flex items-center text-[#03071299] font-inter font-semibold">A</div>
+                    
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">A1</div>
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">A2</div>
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">A3</div>
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">A4</div>
-                </div>
-                <div class="flex justify-between mt-4">
-                    <div class=" flex items-center text-[#03071299] font-inter font-semibold ">B</div>
-                   
+          
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">B1</div>
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">B2</div>
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">B3</div>
                     <div class="btn px-12 text-[#03071299] font-inter font-semibold">B4</div>
                 </div>
+               
             </div>
 
           
@@ -228,14 +229,49 @@
            <div class="col-span-5 p-5 ">
             <h1 class="font-raleway text-2xl font-semibold mb-6">Select Your Seat</h1>
             <p class="border-dashed border-[#03071233] border"></p>
+            <div class="bg-[#f8f8f7] h-[335px] rounded-lg mt-6 p-5">
+                <div class="flex justify-between">
+                    <p class="text-[#030712] font-inter font-semibold">Seat<span class="bg-[#1DD100] text-white px-2 text-[11px] text-center ml-1 rounded-xl">0</span></p>
+                    <p class="text-[#030712] font-inter font-semibold">Class</p>
+                    <p class="text-[#030712] font-inter font-semibold">Price</p>
+                </div>
+                <p class="border-dashed mt-4 border-[#03071233] border"></p>
+                <!-- input paragrap text here -->
+                <div class="flex justify-between mt-3" class="inner-p">
+                   <p>kdslflk</p>
+                   <p>kdlfjlsd</p>
+                   <p>kdsfjl</p>
+                </div>
 
-            <div>
+                <p class="border-dashed mt-4 border-[#03071233] border"></p>
+
+                <!-- total amount here -->
+                <div class="flex justify-between mt-2">
+                    <p class="text-[#030712] font-inter font-semibold">Total Price</p>
+                    <p class="text-[#030712] font-inter font-semibold">BDT <span>0</span></p>
+                </div>
+
+                <label class="input input-bordered flex items-center gap-2 mt-5">
+                    <input type="text" class="grow py-32" placeholder="Have a cupon ?" />
+                    <button class="btn btn-sm text-white bg-[#1DD100] font-inter font-bold">Apply</button>
+                </label>
+                <p class="border-dashed mt-4 border-[#03071233] border"></p>
+                
+                <!-- grand total -->
+                <div class="flex justify-between mt-2" >
+                    <p  class="text-[#030712] font-inter font-semibold">Grand Total</p>
+                    <p  class="text-[#030712] font-inter font-semibold">0</p>
+                </div>
+
+
+
                 
             </div>
            </div>
         </div>
        
     </section>
+ 
 
 
 
