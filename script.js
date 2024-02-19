@@ -13,15 +13,12 @@ for (let seat of seats){
         seat.style.backgroundColor = '#1DD100';
         // decrease seat number
         let totalSeatElement = document.getElementById('total-seat');
-        let totalSeatText = totalSeatElement.innerText;
-        let totalSeat = parseInt(totalSeatText);
-        let availableSeat = totalSeat - 1;
+       
         
 
         // select sect number
         let selectSeatElement = document.getElementById('select-seat')
-        let selectSeatElementText = selectSeatElement.innerText;
-        let selectSeat = parseInt(selectSeatElementText);
+       
         
         
         if(count > 3){
