@@ -61,8 +61,7 @@
                         class="text-[#1DD100] inline-block mt-5 ">P Paribahan </span></h1>
                 <p class="mb-5 font-inter font-normal">P Poribohon is very famous for travel. We can provide may
                     facilities for you . If you travel by P Poribon your taravel is very enjoyable</p>
-                <button class="btn bg-[#1DD100] hover:bg-green-500 border-none font-raleway text-xl font-bold">Buy
-                    Tickets</button>
+                <button ><a href="#ph-poribohon" class="btn bg-[#1DD100] hover:bg-green-500 border-none font-raleway text-xl font-bold">Buy Tickets</a></button>
             </div>
         </div>
     </div>
@@ -110,7 +109,7 @@
 
 
     <!-- ----------------------P H poribohon section----------------------------------- -->
-    <section class=" bg-[#F7F8F8] w-[100%]">
+    <section id="ph-poribohon" class="bg-[#F7F8F8] w-[100%]">
         <!-- hr row -->
         <div>
             <div class="border-t mb-16 border-l h-4 rounded-t-2xl border-[#1DD100] border-r"></div>
@@ -140,7 +139,7 @@
                     <div>
                         <button class="btn bg-[#1DD10026]">
                             <img src="images/seat-green.png" alt="">
-                            <span class="text-[#1DD100]">40 seats left</span>
+                            <span class="text-[#1DD100]"><span id="total-seat">8</span> seats left</span>
                           </button>
                     </div>
                 </div>
@@ -178,7 +177,7 @@
                 <div class="flex justify-center h-full items-center">
                     <div class="space-y-4">
                         <img class="mx-auto" src="images/fare.png" alt="">
-                        <h1 class="font-raleway text-center font-semibold text-2xl">550 Taka</h1>
+                        <h1 class="font-raleway text-center font-bold text-2xl"><p id="price">550</p> Taka</h1>
                         <p class="text-center font-raleway font-semibold text-lg text-[#03071299]">Per Seat</p>
                     </div>
                 </div>
@@ -211,15 +210,15 @@
                 <div class="grid grid-cols-4 gap-9 mt-4">
                     
                     
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">A1</div>
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">A2</div>
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">A3</div>
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">A4</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats A1" >A1</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats A2" >A2</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats A3" >A3</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats A4" >A4</div>
           
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">B1</div>
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">B2</div>
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">B3</div>
-                    <div class="btn px-12 text-[#03071299] font-inter font-semibold">B4</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats B1" >B1</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats B2" >B2</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats B3" >B3</div>
+                    <div class="btn px-12 text-[#03071299] font-inter font-semibold seats B4" >B4</div>
                 </div>
                
             </div>
@@ -231,16 +230,16 @@
             <p class="border-dashed border-[#03071233] border"></p>
             <div class="bg-[#f8f8f7] h-[335px] rounded-lg mt-6 p-5">
                 <div class="flex justify-between">
-                    <p class="text-[#030712] font-inter font-semibold">Seat<span class="bg-[#1DD100] text-white px-2 text-[11px] text-center ml-1 rounded-xl">0</span></p>
+                    <p class="text-[#030712] font-inter font-semibold">Seat<span class="bg-[#1DD100] text-white px-2 text-[11px] text-center ml-1 rounded-xl" id="select-seat">0</span></p>
                     <p class="text-[#030712] font-inter font-semibold">Class</p>
                     <p class="text-[#030712] font-inter font-semibold">Price</p>
                 </div>
                 <p class="border-dashed mt-4 border-[#03071233] border"></p>
                 <!-- input paragrap text here -->
-                <div class="flex justify-between mt-3" class="inner-p">
-                   <p>kdslflk</p>
+                <div class=" mt-3 inner-p" id="inner-p">
+                   <!-- <p>kdslflk</p>
                    <p>kdlfjlsd</p>
-                   <p>kdsfjl</p>
+                   <p>kdsfjl</p> -->
                 </div>
 
                 <p class="border-dashed mt-4 border-[#03071233] border"></p>
@@ -248,19 +247,19 @@
                 <!-- total amount here -->
                 <div class="flex justify-between mt-2">
                     <p class="text-[#030712] font-inter font-semibold">Total Price</p>
-                    <p class="text-[#030712] font-inter font-semibold">BDT <span>0</span></p>
+                    <p class="text-[#030712] font-inter font-semibold">BDT <span id="total-amount">0</span></p>
                 </div>
 
-                <label class="input input-bordered flex items-center gap-2 mt-5">
-                    <input type="text" class="grow py-32" placeholder="Have a cupon ?" />
-                    <button class="btn btn-sm text-white bg-[#1DD100] font-inter font-bold">Apply</button>
+                <label class="input input-bordered flex items-center gap-2 mt-5" id="label">
+                    <input type="text" class="grow py-32" placeholder="Have a cupon ?" id="input-field" />
+                    <button class="btn btn-sm text-white bg-[#1DD100] font-inter font-bold" id="apply-btn">Apply</button>
                 </label>
                 <p class="border-dashed mt-4 border-[#03071233] border"></p>
                 
                 <!-- grand total -->
                 <div class="flex justify-between mt-2" >
                     <p  class="text-[#030712] font-inter font-semibold">Grand Total</p>
-                    <p  class="text-[#030712] font-inter font-semibold">0</p>
+                    <p  class="text-[#030712] font-inter font-semibold" id="grand" >0</p>
                 </div>
 
 
