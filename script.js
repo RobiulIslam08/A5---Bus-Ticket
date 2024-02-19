@@ -1,5 +1,6 @@
 let seats = document.getElementsByClassName('seats');
 let totalCost = 0;
+let getSeat = 0;
 // let seatCount = 0;
 for (let seat of seats){
     seat.addEventListener('click', function(){
@@ -20,12 +21,14 @@ for (let seat of seats){
         selectSeatElement.innerText = getSeat
 
         if(getSeat > 4){
-            
+            //seat.target.setAttribute("disabled",true)
+            seat.style.backgroundColor = '';
             alert('apni 4tar beshi seat select korte parben nah')
             return;
-       
+            
         }
         getSeat++
+        
         
        
         // price 
