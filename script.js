@@ -2,7 +2,7 @@ let seats = document.getElementsByClassName('seats');
 let count = 0;
 let leftSeat = 8;
 let totalCost = 0;
-let getSeat = 0;
+
 // let seatCount = 0;
 for (let seat of seats){
     seat.addEventListener('click', function(){
@@ -23,7 +23,7 @@ for (let seat of seats){
         
         if(count > 3){
             // seat.classList.add("pointer-events-none")
-            seat.setAttribute('disabled',true);
+            
             // seat.classList.remove('seats')
             seat.style.backgroundColor = '';
             alert('apni 4tar beshi seat select korte parben nah')
