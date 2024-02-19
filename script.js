@@ -1,13 +1,9 @@
 let seats = document.getElementsByClassName('seats');
 let totalCost = 0;
-
-
 // let seatCount = 0;
 for (let seat of seats){
     seat.addEventListener('click', function(){
         
-       
-
         seat.style.backgroundColor = '#1DD100';
         // decrease seat number
         let totalSeatElement = document.getElementById('total-seat');
