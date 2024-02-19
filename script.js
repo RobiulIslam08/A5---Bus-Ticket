@@ -24,7 +24,9 @@ for (let seat of seats){
         selectSeatElement.innerText = getSeat
 
         if(getSeat > 4){
+            
             alert('apni 4tar beshi seat select korte parben nah')
+            return;
        
         }
         getSeat++
@@ -80,13 +82,15 @@ document.getElementById('apply-btn').addEventListener('click', function(){
        
        
     }
+  
     else if( inputFieldValue == 'Couple 20'){
         let discount = totalCost * 0.20;
         let finalPayTaka = totalCost - discount;
         grandTaka.innerText = finalPayTaka;
+        label.classList.add('hidden')
     }
     else{
-        console.log('milenai')
+        alert('please write a valid cupon')
     }
 
 })
